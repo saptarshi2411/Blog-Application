@@ -39,7 +39,7 @@ public class Users {
 
     }
 
-    // Getters and Setters
+    
     public ObjectId getId() { return id; }
     public void setId(ObjectId id) { this.id = id; }
 
