@@ -89,12 +89,6 @@ public class BlogController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/categoryBlogs/{category}")
-    public ResponseEntity<List<Blog>> categoryBlogs(@PathVariable String category) {
-        List<Blog> categoryBlogs = service.getCategoryBlogs(category);
-        return new ResponseEntity<>(categoryBlogs, HttpStatus.OK);
-    }
-
     @GetMapping("/blogs/{randomId}")
     public ResponseEntity<Blog> getBlogById(@PathVariable int ramdomId) {
         Blog blog = service.getBlogById(ramdomId);
